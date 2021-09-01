@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 7-9 | Photos from API</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+	<style>
+		#loading_spinner {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(255,255,255,0.98);
+			z-index: 9;
+			display: none;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<header class="py-4">
+		<div class="container text-center">
+			<h1>Milestone-6 Practice | API</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+
+			<!-- notice -->
+			<div id="notice"></div>
+
+			<!-- photo detail -->
+			<section id="photo_detail" class="text-center"></section>
+
+			<!-- photos -->
+			<section id="photos" class="photos my-5">
+				<h2 class="text-center mb-3">All Photos</h2>
+				<div id="photos_grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4"></div>
+			</section>
+
+		</div>
+	</main>
+	
+	<!-- loading spinner -->
+	<div id="loading_spinner" class="text-center">
+		<div class="spinner-border text-warning" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+
+
+	<!-- script -->
+	<script src="./js/app.js"></script>
+</body>
+</html>
